@@ -1,25 +1,14 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  gameNumber: number;
-  myTime: any;
+  numbers: number[] = [];
 
-  constructor(){
-    this.gameNumber = 0;
-  }
-
-  onGameStarted(){
-    this.myTime = setInterval(() => {
-      this.gameNumber += 1;
-    }, 1000);
-  }
-
-  onGameStopped(){
-    clearInterval(this.myTime);
+  onGameStarted(gameNumber: number) {
+    this.numbers.push(gameNumber);
   }
 }
