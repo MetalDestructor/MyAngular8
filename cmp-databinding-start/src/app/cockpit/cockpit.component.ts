@@ -14,7 +14,7 @@ export class CockpitComponent implements OnInit {
     serverName: string;
     serverContent: string;
   }>();
-  @ViewChild('serverContentInput', {static: true}) serverContentInput: ElementRef;
+  @ViewChild('serverContentInput', {static: false}) serverContentInput: ElementRef;
   // newServerName = '';
   // newServerContent = '';
 
