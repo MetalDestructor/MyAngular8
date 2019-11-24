@@ -21,12 +21,8 @@
       </div>
       <div class="row">
         <div class="col-xs-12" *ngFor="let number of numbers">
-          <div *ngIf="number%2===1">
-              <app-odd [gNumber]="number"></app-odd>
-          </div>
-          <div *ngIf="number%2===0">
-              <app-even [gNumber]="number"></app-even>
-          </div>          
+          <app-odd *ngIf="number%2===1" [gNumber]="number"></app-odd>
+          <app-even *ngIf="number%2===0" [gNumber]="number"></app-even>
         </div>
       </div>
     </div>
