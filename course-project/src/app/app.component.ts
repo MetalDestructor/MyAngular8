@@ -6,9 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  currentRoute: string = 'recipies';
-
-  onRouteSelected(route: string){
-    this.currentRoute = route;
-  }
 }
