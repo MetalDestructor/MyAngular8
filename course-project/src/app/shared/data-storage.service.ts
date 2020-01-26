@@ -7,6 +7,7 @@ import { Recipe } from "../recipes/recipe.model";
 
 @Injectable({ providedIn: "root" })
 export class DataStorageService {
+  
   constructor(private http: HttpClient, private recipeService: RecipeService) {}
 
   saveRecipes() {
